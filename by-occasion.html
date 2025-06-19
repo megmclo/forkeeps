@@ -96,16 +96,26 @@
       flex-wrap: wrap;
       gap: 1em;
       margin: 1em auto 2em;
-      max-width: 800px;
+      max-width: 1000px;
     }
     .submenu a {
-      background-color: #e4b5b5;
-      padding: 0.75em 1.5em;
-      border-radius: 6px;
+      background-color: #f8dada;
+      padding: 1em 2em;
+      border-radius: 10px;
       color: #333;
       text-decoration: none;
       font-weight: bold;
+      box-shadow: 2 px 2 px 6 px rgba(0,0,0,0.1);
+      border: 2px solid #b35b5b;
+      text-align: center;
+      min-width: 150px;
+      transition: background color 0.3s, transform 0.2s;
     }
+    .submenu a:hover {
+      background-color: #e4b5b5;
+      transform: translateY(-2px);
+    }
+    
     .occasion-section {
       padding: 2em 1em;
       max-width: 900px;
@@ -161,19 +171,23 @@
   </nav>
 
   <div class="header-section">
-    <h1>By Occasion</h1>
+    <h1>by occasion</h1>
   </div>
 
   <div class="submenu">
-    <a href="#birthday">Birthday</a>
-    <a href="#mothersday">Mother's Day</a>
-    <a href="#wedding">Wedding</a>
-    <a href="#baby">Baby Shower</a>
-    <a href="#holiday">Holiday</a>
+    <a href="#birthday">birthday</a>
+    <a href="#couples">couples</a>
+    <a href="#christmas">christmas</a>
+    <a href="#baby">baby & kids</a>
+    <a href="#mother">mother's day</a>
+    <a href="#father">father's day</a>
+    <a href="#valentines">valentine's</a>
+    <a href="#sympathy">sympathy</a>
+    <a href="#graduation">graduation</a>
   </div>
 
   <div id="birthday" class="occasion-section">
-    <h2>Birthday</h2>
+    <h2>birthday</h2>
     <div class="catalogue-item">
       <p><strong>Custom Name Banner</strong> – Personalized with name and age, in any colour scheme.</p>
     </div>
@@ -182,34 +196,62 @@
     </div>
   </div>
 
-  <div id="mothersday" class="occasion-section">
-    <h2>Mother's Day</h2>
+  <div id="couples" class="occasion-section">
+    <h2>couples</h2>
     <div class="catalogue-item">
       <p><strong>Framed Keepsake Art</strong> – Layered paper flowers with a message to mom.</p>
     </div>
   </div>
 
-  <div id="wedding" class="occasion-section">
-    <h2>Wedding</h2>
+  <div id="christmas" class="occasion-section">
+    <h2>christmas</h2>
     <div class="catalogue-item">
       <p><strong>Wedding Ornament</strong> – Custom wood slice or acrylic piece with couple's names and date.</p>
     </div>
   </div>
 
   <div id="baby" class="occasion-section">
-    <h2>Baby Shower</h2>
+    <h2>baby & kids</h2>
     <div class="catalogue-item">
       <p><strong>Baby Name Sign</strong> – Mini plaque or framed design with the baby's name in soft pastel colours.</p>
     </div>
   </div>
 
-  <div id="holiday" class="occasion-section">
-    <h2>Holiday</h2>
+  <div id="mother" class="occasion-section">
+    <h2>mother's day</h2>
     <div class="catalogue-item">
       <p><strong>Holiday Tags Set</strong> – Hand-cut paper tags for gifts, customizable messages.</p>
     </div>
   </div>
 
+  <div id="father" class="occasion-section">
+    <h2>father's day</h2>
+    <div class="catalogue-item">
+      <p><strong>Holiday Tags Set</strong> – Hand-cut paper tags for gifts, customizable messages.</p>
+    </div>
+  </div>
+
+    <div id="valentines" class="occasion-section">
+    <h2>valentine's</h2>
+    <div class="catalogue-item">
+      <p><strong>Holiday Tags Set</strong> – Hand-cut paper tags for gifts, customizable messages.</p>
+    </div>
+  </div>
+
+    <div id="sympathy" class="occasion-section">
+    <h2>sympathy</h2>
+    <div class="catalogue-item">
+      <p><strong>Holiday Tags Set</strong> – Hand-cut paper tags for gifts, customizable messages.</p>
+    </div>
+  </div>
+
+    <div id="graduation" class="occasion-section">
+    <h2>graduation</h2>
+    <div class="catalogue-item">
+      <p><strong>Holiday Tags Set</strong> – Hand-cut paper tags for gifts, customizable messages.</p>
+    </div>
+  </div>
+  
   <footer>
     <p>
       <a href="mailto:youremail@example.com">youremail@example.com</a> |
