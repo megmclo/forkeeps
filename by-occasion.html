@@ -38,6 +38,53 @@
       font-weight: bold;
       padding: 0 0.5em;
     }
+    .nav-toggle {
+      display: none;
+    }
+    
+    .nav-toggle-label {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 1em;
+    }
+    
+    .nav-toggle-label span {
+      background: white;
+      height: 3px;
+      width: 25px;
+      margin: 4px 0;
+      transition: 0.3s;
+    }
+    
+    /* Responsive menu behavior */
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+      }
+    
+      .nav-right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #b35b5b;
+        padding: 1em 0;
+      }
+    
+      .nav-toggle:checked + .nav-toggle-label + .nav-right {
+        display: flex;
+      }
+    
+      .nav-toggle-label {
+        display: flex;
+      }
+    
+      .nav-right a {
+        padding: 0.75em 1em;
+        text-align: center;
+      }
+    }
+
     .header-section {
       margin-top: 80px;
       text-align: center;
@@ -94,6 +141,14 @@
     <div class="nav-left">
       <img src="logo.png" alt="Logo" class="logo" />
     </div>
+  
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  
     <div class="nav-right">
       <a href="index.html">Home</a>
       <a href="by-occasion.html">By Occasion</a>
