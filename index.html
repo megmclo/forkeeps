@@ -35,6 +35,55 @@
       text-decoration: none;
       font-weight: bold;
     } 
+
+    .nav-toggle {
+      display: none;
+    }
+
+    .nav-toggle-label {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 1em;
+    }
+
+    .nav-toggle-label span {
+      background: white;
+      height: 3px;
+      width: 25px;
+      margin: 4px 0;
+      transition: 0.3s;
+    }
+
+    /* Responsive menu layout */
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    
+      .nav-toggle-label {
+        display: flex;
+      }
+    
+      .nav-right {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background-color: #b35b5b;
+        padding: 1em 0;
+      }
+    
+      .nav-right a {
+        padding: 0.75em 1em;
+        text-align: center;
+      }
+    
+      .nav-toggle:checked + .nav-toggle-label + .nav-right {
+        display: flex;
+      }
+    }
+
     
     .banner {
       width: 100%;
@@ -72,6 +121,12 @@
     <div class="nav-left">
       <img src="logo.png" alt="Logo" class="logo" />
     </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
     <div class="nav-right">
       <a href="by-occasion.html">By Occasion</a>
       <a href="by-product.html">By Product Type</a>
