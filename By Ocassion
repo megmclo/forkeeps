@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>By Occasion – For Keeps</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #fff6f6;
+      color: #333;
+    }
+    nav {
+      background-color: #b35b5b;
+      padding: 0.5em 2em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .nav-left img.logo {
+      height: 40px;
+    }
+    .nav-right {
+      display: flex;
+      gap: 2em;
+    }
+    .nav-right a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0 0.5em;
+    }
+    .header-section {
+      margin-top: 80px;
+      text-align: center;
+      padding: 2em 1em 1em 1em;
+    }
+    .submenu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1em;
+      margin: 1em auto 2em;
+      max-width: 800px;
+    }
+    .submenu a {
+      background-color: #e4b5b5;
+      padding: 0.75em 1.5em;
+      border-radius: 6px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .occasion-section {
+      padding: 2em 1em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .occasion-section h2 {
+      border-bottom: 2px solid #b35b5b;
+      padding-bottom: 0.5em;
+    }
+    .catalogue-item {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 6px;
+    }
+    footer {
+      background-color: #f1dada;
+      padding: 1em;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+    footer a {
+      color: #b35b5b;
+      text-decoration: none;
+      margin: 0 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <img src="logo.png" alt="Logo" class="logo" />
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="by-occasion.html">By Occasion</a>
+      <a href="by-product.html">By Product Type</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="header-section">
+    <h1>By Occasion</h1>
+  </div>
+
+  <div class="submenu">
+    <a href="#birthday">Birthday</a>
+    <a href="#mothersday">Mother's Day</a>
+    <a href="#wedding">Wedding</a>
+    <a href="#baby">Baby Shower</a>
+    <a href="#holiday">Holiday</a>
+  </div>
+
+  <div id="birthday" class="occasion-section">
+    <h2>Birthday</h2>
+    <div class="catalogue-item">
+      <p><strong>Custom Name Banner</strong> – Personalized with name and age, in any colour scheme.</p>
+    </div>
+    <div class="catalogue-item">
+      <p><strong>Birthday Card Insert</strong> – Cut and layered paper art that fits into a folded card.</p>
+    </div>
+  </div>
+
+  <div id="mothersday" class="occasion-section">
+    <h2>Mother's Day</h2>
+    <div class="catalogue-item">
+      <p><strong>Framed Keepsake Art</strong> – Layered paper flowers with a message to mom.</p>
+    </div>
+  </div>
+
+  <div id="wedding" class="occasion-section">
+    <h2>Wedding</h2>
+    <div class="catalogue-item">
+      <p><strong>Wedding Ornament</strong> – Custom wood slice or acrylic piece with couple's names and date.</p>
+    </div>
+  </div>
+
+  <div id="baby" class="occasion-section">
+    <h2>Baby Shower</h2>
+    <div class="catalogue-item">
+      <p><strong>Baby Name Sign</strong> – Mini plaque or framed design with the baby's name in soft pastel colours.</p>
+    </div>
+  </div>
+
+  <div id="holiday" class="occasion-section">
+    <h2>Holiday</h2>
+    <div class="catalogue-item">
+      <p><strong>Holiday Tags Set</strong> – Hand-cut paper tags for gifts, customizable messages.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="mailto:youremail@example.com">youremail@example.com</a> |
+      <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a> |
+      For Keeps © 2025
+    </p>
+  </footer>
+</body>
+</html>
