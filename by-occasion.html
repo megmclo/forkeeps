@@ -95,9 +95,8 @@
     .header-image {
       display: block;
       margin: 100px auto 40px;
-      width: 90% !important;
-      max-width: 400px !important;
-      height: auto !important;
+      max-width: 400px;
+      height: auto;
     }
     
     .submenu {
@@ -143,13 +142,22 @@
       border-bottom: 2px solid #b35b5b;
       padding-bottom: 0.5em;
     }
+
+    .catalogue-grid {
+      display: grid;
+      gird-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5em;
+      margin-top: 1em;
+    }
+    
     .catalogue-item {
       background: #fff;
       border: 1px solid #ccc;
       padding: 1em;
-      margin-bottom: 1em;
       border-radius: 6px;
+      box-shadow: 1px 1px 6px rgba(0,0,0,0.05);
     }
+    
     footer {
       background-color: #f1dada;
       padding: 1em;
@@ -180,11 +188,11 @@
     </label>
   
     <div class="nav-right">
-      <a href="by-occasion.html">By Occasion</a>
-      <a href="by-product.html">By Product Type</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="by-occasion.html">by occasion</a>
+      <a href="by-product.html">by product type</a>
+      <a href="how-it-works.html">how it works</a>
+      <a href="about.html">about</a>
+      <a href="contact.html">contact</a>
     </div>
   </nav>
 
@@ -206,11 +214,16 @@
 
   <div id="birthday" class="occasion-section">
     <img src="birthday.png" alt="birthday" class="section-heading" />
-    <div class="catalogue-item">
-      <p><strong>Custom Name Banner</strong> – Personalized with name and age, in any colour scheme.</p>
-    </div>
-    <div class="catalogue-item">
-      <p><strong>Birthday Card Insert</strong> – Cut and layered paper art that fits into a folded card.</p>
+    <div class="catalogue-grid">
+      <div class="catalogue-item">
+        <p><strong>Custom Name Banner</strong> – Personalized with name and age, in any colour scheme.</p>
+      </div>
+      <div class="catalogue-item">
+        <p><strong>Birthday Card Insert</strong> – Cut and layered paper art that fits into a folded card.</p>
+      </div>
+      <div class="catalogue-item">
+        <p><strong>Custom Name Banner</strong> – Personalized with name and age, in any colour scheme.</p>
+      </div>
     </div>
   </div>
 
